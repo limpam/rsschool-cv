@@ -1,1 +1,1 @@
-# rsschool-cv
+https://limpam.github.io/rsschool-cv/
