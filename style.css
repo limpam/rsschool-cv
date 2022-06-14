@@ -5,23 +5,56 @@
 body {
     font-family: 'Roboto', sans-serif;  
     min-height: 100vh;
-    margin: 0; padding: 0;
+    margin: 0; 
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #684949;
     
 }
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #463131; 
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    /* margin: 0;  */
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #463131; 
+    letter-spacing: 2px; 
+}
   .main {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .footer {
+    
     border: 1px solid rgb(21, 255, 0);
+    
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8d9ca;
   }
 
 .header {
-    border: 1px solid rgb(156, 24, 245);
+    /* border: 1px solid rgb(156, 24, 245); */
+    /* background-color: brown; */
 }
 
 .container {
@@ -29,13 +62,15 @@ body {
     margin: 0 auto;
   }
 
-  .nav-list {
+.nav-list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
+    background-color: #f8d9ca;
   }
 
+  
   html {
     scroll-behavior: smooth; 
   }
@@ -43,12 +78,13 @@ body {
   .nav-link {
     padding: 0 20px;
     line-height: 50px;
-    /* transition: .3s; */
+    color: #331010;
+    text-decoration: none;
   }
 
   .section {
     width: 50%;
-   
+    padding: 30px;
   }
 
   .section-title {
@@ -59,3 +95,29 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+
+  
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+  .body_link {
+      color: #9e5321;
+      text-decoration: none;
+  }
+
+  /* :link:hover { text-decoration: underline} */
+
+  .nav-item a {
+    transition: color 0.5s;
+  }
+
+  .nav-item a:hover {
+    color: #d8771b;
+ 
+  }
+
+  
